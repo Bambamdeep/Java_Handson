@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../azurefunction-0.0.1-SNAPSHOT.jar",
+  "entryPoint" : "com.azurefunction.azurefunction.Function.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
